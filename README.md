@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -33,23 +33,3 @@
 }
 button {
   padding: 1em 2em;
-  font-size: 1em;
-  margin-top: 1em;
-}
-canvas {
-  margin-top: 2em;
-}function startResearch() {
-  const status = document.getElementById("status");
-  status.innerText = "Seeking divine knowledge...";
-  drawGraph();
-}
-
-function drawGraph() {
-  const ctx = document.getElementById("graph").getContext("2d");
-  ctx.clearRect(0, 0, 300, 300);
-  ctx.beginPath();
-  ctx.arc(150, 150, 100, 0, 2 * Math.PI);
-  ctx.fillStyle = "#d1e7dd";
-  ctx.fill();
-  ctx.stroke();
-}
